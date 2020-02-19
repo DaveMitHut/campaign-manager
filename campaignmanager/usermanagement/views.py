@@ -20,5 +20,4 @@ def register(request):
     else:
         form = UserCreationForm
 
-    template = loader.get_template('usermanagement/index.html')
-    return HttpResponse(template.render({'form': form}))
+    return render(request, 'usermanagement/index.html', {'form': form})

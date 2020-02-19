@@ -5,10 +5,20 @@ Repository for the campaign manager project.
 The campaign-manager is supposed to be a web application, written in *python3*.
 The backend webserver is *django* until the application is deployed.
 
-## Functions
+## Naming conventions
+Methods in **views.py**: should end with *_view*
+
+## Implemented functionalities
+
+- User Login
+- User Registration
+
+## TODO
 The following functionalities should be implemented:
 
-- User Accounts
+- Error handling
+- Check for login
+- User Logout
 - every user can create a campaign
 - players have to be invited to a campaign by the creator
 - a campaign can have different roles for the users:

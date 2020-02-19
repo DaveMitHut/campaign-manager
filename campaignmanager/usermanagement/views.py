@@ -7,10 +7,10 @@ from django.template import loader
 from django.contrib.auth import authenticate, login
 
 # Create your views here.
-def index(request):
+def index_view(request):
     return HttpResponse("Hello World! You are looking at the user management index.")
 
-def login_page(request):
+def login_view(request):
     username = request.POST['username']
     password = request.POST['password']
     user = authenticate(request, username=username, password=password)
@@ -22,7 +22,7 @@ def login_page(request):
         return HttpResponse("Something went wrong.")
 
 
-def register(request):
+def register_view(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
         if form.is_valid:

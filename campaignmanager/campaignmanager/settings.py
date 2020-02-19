@@ -25,7 +25,7 @@ SECRET_KEY = 'd7tf8sqfjp)u&itd7^o_!m_yiq+9#op@7(n^+3!80rki4-!^sd'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.2.17']
 
 
 # Application definition
@@ -75,8 +75,10 @@ WSGI_APPLICATION = 'campaignmanager.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'OPTIONS': {
+            'read_default_file':'/home/cmpmgr/db.cnf',
+        },
     }
 }
 

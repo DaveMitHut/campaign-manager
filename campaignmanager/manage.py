@@ -2,7 +2,7 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-
+import pymysql
 
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'campaignmanager.settings')
@@ -18,4 +18,6 @@ def main():
 
 
 if __name__ == '__main__':
+    pymysql.version_info = (1, 3, 13, "final", 0)
+    pymysql.install_as_MySQLdb()
     main()

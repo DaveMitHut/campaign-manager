@@ -3,7 +3,7 @@ Repository for the campaign manager project.
 
 ## General
 The campaign-manager is supposed to be a web application, written in *python3*.
-The backend webserver should for now either be *django* or *flask*.
+The backend webserver is *django* until the application is deployed.
 
 ## Functions
 The following functionalities should be implemented:
@@ -23,4 +23,4 @@ The following functionalities should be implemented:
   - everyone
 (- players can create character sheets for their characters)
 (- markdown support and online editor for text documents)
-(- awesome themes (fanatsy/sci-fi))
+(- awesome themes (fantasy/sci-fi))
